@@ -1,5 +1,6 @@
 #+STARTUP: showall
 #+OPTIONS: num:nil
+#+TITLE: Linux Manual Pages
 
 * watch (1)
   watch [options] command
