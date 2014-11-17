@@ -11,5 +11,14 @@
   I usually run it with ~-d~ flag and ~-n~ set to 1 (one second).
   
   There are many places this command is useful, I sometimes use it to monitor VCS fail-overs and user activity.
+
+* from(1)
+  ~from [-c] [-f file] [-s sender] [user]~
+
+  Print names of those who have sent mail
+
+  This can be used nicely in conjunction with wait to display incoming email.
   
+  ~-s~ option can be used like a filter.
   
+  MAIL environment variable is consulted for the mailbox location, otherwise default of /var/mail/user is used.
