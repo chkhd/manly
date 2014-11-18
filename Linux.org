@@ -6,10 +6,10 @@
   ~watch [options] command~
 
   Execute a program periodically, showing output full-screen
-  
+
   This command is very useful when monitoring some slow change or simply to emulate top.
   I usually run it with ~-d~ flag and ~-n~ set to 1 (one second).
-  
+
   There are many places this command is useful, I sometimes use it to monitor VCS fail-overs and user activity.
 
 * from(1)
