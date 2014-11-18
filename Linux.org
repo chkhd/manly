@@ -18,7 +18,7 @@
   Print names of those who have sent mail
 
   This can be used nicely in conjunction with wait to display incoming email.
-  
+
   ~-s~ option can be used like a filter.
-  
+
   MAIL environment variable is consulted for the mailbox location, otherwise default of /var/mail/user is used.
