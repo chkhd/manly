@@ -22,3 +22,10 @@
   ~-s~ option can be used like a filter.
 
   MAIL environment variable is consulted for the mailbox location, otherwise default of /var/mail/user is used.
+
+* pwdx(1)
+  ~pwdx [options] pid [...]~
+
+  Report current working directory of a process
+
+  This is rarely useful, but when it is useful it is /really/ useful.
