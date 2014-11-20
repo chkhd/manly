@@ -29,3 +29,12 @@
   Report current working directory of a process
 
   This is rarely useful, but when it is useful it is /really/ useful.
+
+* paste(1)
+  ~paste [OPTION]... [FILE]...~
+
+  Merge lines of files
+
+  This command is very handy when you need to multi-column lists. By default the files are aligned as columns, but if you supply ~-s~ option they will be aligned as rows instead.
+
+  ~-d~ is used when you need something other than TAB separating the columns. Generally the delimiter list will contain /n - 1/ delimiters, where /n/ is the number of columns, which itself will be either number of arguments supplied to ~paste~ or number of lines in the file if ~-s~ was used.
