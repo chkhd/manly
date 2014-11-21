@@ -38,3 +38,10 @@
   This command is very handy when you need to multi-column lists. By default the files are aligned as columns, but if you supply ~-s~ option they will be aligned as rows instead.
 
   ~-d~ is used when you need something other than TAB separating the columns. Generally the delimiter list will contain /n - 1/ delimiters, where /n/ is the number of columns, which itself will be either number of arguments supplied to ~paste~ or number of lines in the file if ~-s~ was used.
+
+* lscpu(1)
+  ~lscpu [-hpx] [-s directory]~
+
+  Display information on CPU architecture
+
+  Quick and easy way to find information about your CPU(s). ~-p~ can be used when this output must be parsed by a script or piped to some other command, it generates a nice CSV list instead of human readable output. If you supply ~-s~ with location of sys filesystem root of another system, it can also give you information about that systems CPU.
