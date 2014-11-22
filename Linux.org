@@ -45,3 +45,10 @@
   Display information on CPU architecture
 
   Quick and easy way to find information about your CPU(s). ~-p~ can be used when this output must be parsed by a script or piped to some other command, it generates a nice CSV list instead of human readable output. If you supply ~-s~ with location of sys filesystem root of another system, it can also give you information about that systems CPU.
+
+* tailf(1)
+  ~tailf [OPTION] file~
+
+  Follow the growth of a log file
+
+  This is the same as ~tail -f~, except files are not accessed when not growing. This means it is much better choice on laptops where the disks might be spun down to save power. ~-n~ can be used to change the number of lines displayed initially. This command does not update file access time.
