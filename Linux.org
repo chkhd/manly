@@ -59,3 +59,11 @@
   Do nothing, successfully
 
   Exit with a status code indicating success. This is superseded by shell built-in ~true~ command. The value returned by this command is always ~0~. It is mostly used in shell scripts for infinite loops.
+
+* false(1)
+  ~false [ignored command line arguments]~
+
+  Do nothing, unsuccessfully
+
+  Exit with a status code indicating failure. This is superseded by shell built-in ~false~ command. The value returned by this command is always ~1~. This command is most commonly encountered in ~/etc/passwd~ file as the value of shell for users who are not allowed to log-in. Although ~/sbin/nologin~ may be more fitting for this purpose, as it prints a notification before terminating the session.
+
