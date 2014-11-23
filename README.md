@@ -1,3 +1,5 @@
+[![License BY-SA][badge-license]](http://creativecommons.org/licenses/by-sa/4.0/)
+
 manly
 =====
 
