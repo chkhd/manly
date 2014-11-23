@@ -52,3 +52,10 @@
   Follow the growth of a log file
 
   This is the same as ~tail -f~, except files are not accessed when not growing. This means it is much better choice on laptops where the disks might be spun down to save power. ~-n~ can be used to change the number of lines displayed initially. This command does not update file access time.
+
+* true(1)
+  ~true [ignored command line arguments]~
+
+  Do nothing, successfully
+
+  Exit with a status code indicating success. This is superseded by shell built-in ~true~ command. The value returned by this command is always ~0~. It is mostly used in shell scripts for infinite loops.
