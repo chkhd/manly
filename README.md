@@ -1,4 +1,6 @@
-[![License BY-SA][badge-license]](http://creativecommons.org/licenses/by-sa/4.0/)
+Copyright (c)  2014  David Chkhivadze
+
+[![License MIT][badge-license]](http://opensource.org/licenses/MIT)
 
 manly
 =====
@@ -9,3 +11,4 @@ This repo is a log for my one-man-page-per-day challange. Basically I am going t
 
 May contain trace amounts of shell scripting.
 
+[badge-license]: http://img.shields.io/badge/license-MIT-green.svg
