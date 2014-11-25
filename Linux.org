@@ -67,7 +67,7 @@
 
   Exit with a status code indicating failure. This is superseded by shell built-in ~false~ command. The value returned by this command is always ~1~. This command is most commonly encountered in ~/etc/passwd~ file as the value of shell for users who are not allowed to log-in, although ~/sbin/nologin~ may be more fitting for this purpose, as it prints a notification before terminating the session.
 
-* lsmod(1)
+* lsmod(8)
   Show the status of modules in the Linux Kernel
 
   This command just displays the list of modules currently loaded into the kernel from ~/proc/modules~ in a nicely formatted way.
