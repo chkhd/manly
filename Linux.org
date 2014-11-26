@@ -77,4 +77,4 @@
 
   Simple program to insert a module into the Linux Kernel
 
-  You should probably use ~modprobe(8)~ instead.
+  You should probably use ~modprobe(8)~ instead. ~dmesg~ should be consulted for full error reports as most of work is done by the kernel, not this command.
