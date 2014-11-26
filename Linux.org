@@ -71,3 +71,10 @@
   Show the status of modules in the Linux Kernel
 
   This command just displays the list of modules currently loaded into the kernel from ~/proc/modules~ in a nicely formatted way.
+
+* insmod(8)
+  ~insmod [filename] [module options...]~
+
+  Simple program to insert a module into the Linux Kernel
+
+  You should probably use ~modprobe(8)~ instead.
