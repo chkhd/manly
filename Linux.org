@@ -78,3 +78,10 @@
   Simple program to insert a module into the Linux Kernel
 
   You should probably use ~modprobe(8)~ instead. ~dmesg~ should be consulted for full error reports as most of work is done by the kernel, not this command.
+
+* rmmod(8)
+  ~rmmod [-f] [-w] [-s] [-v] [modulename]~
+
+  Simple program to remove a module from the Linux Kernel
+
+  You should probably use ~modprobe(8)~ with ~-r~ option. For this to work the kernel must support module unloading. ~-f~ only works if the kernel is compiled with /CONFIG_MODULE_FORCE_UNLOAD/ and it allows you to remove modules which are not supposed to be removed. ~-s~ will redirect errors to syslog. ~-w~ can be used when the module you are trying to unload is in use, it will block new uses of the module and wait until it can be safely unloaded.
