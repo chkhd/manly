@@ -102,7 +102,7 @@
   Module dependencies should be up to date prior to calling this command, done using ~depmod(8)~.
   ~-C~ can be used to specify alternate configuration file, ignoring ~/etc/modprobe.d~.
   ~--first-time~ can be used in scripts to know for sure whether ~modprobe~ actually did anything, it affects the exit status when it does not do anything.
-  ~--show~ ~-n~ performs a dry-run, combine with ~-v~ for troubleshooting.
+  ~-n~ performs a dry-run, combine with ~-v~ for troubleshooting.
   ~-r~ is used to remove a module instead of inserting it, this will also try to remove its dependencies which are no longer required. Can take more than one module as an argument.
   ~-S~ specifies kernel version to use when findng modules instead of relying on ~uname(2)~
   ~--show-depends~ lists module or alias dependencies, including module itself.
