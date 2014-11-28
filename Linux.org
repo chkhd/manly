@@ -104,7 +104,7 @@
   ~--first-time~ can be used in scripts to know for sure whether ~modprobe~ actually did anything, it affects the exit status when it does not do anything.
   ~-n~ performs a dry-run, combine with ~-v~ for troubleshooting.
   ~-r~ is used to remove a module instead of inserting it, this will also try to remove its dependencies which are no longer required. Can take more than one module as an argument.
-  ~-S~ specifies kernel version to use when findng modules instead of relying on ~uname(2)~
+  ~-S~ specifies kernel version to use when findng modules instead of relying on ~uname(2)~.
   ~--show-depends~ lists module or alias dependencies, including module itself.
   ~-s~ redirects error messages to syslog.
   
