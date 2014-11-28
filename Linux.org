@@ -108,3 +108,12 @@
   ~--show-depends~ lists module or alias dependencies, including module itself.
   ~-s~ redirects error messages to syslog.
   
+* sleep(1)
+  ~sleep NUMBER[SUFFIX]...~
+  ~sleep OPTION~
+
+  Delay for a specified amount of time
+
+  Pause for /NUMBER/ of seconds, minutes (/SUFFIX m/), hours (/SUFFIX h/) or days (/SUFFIX d/). If multiple arguments are specified they are summed.
+  GNU accepts arguments of both integer and arbitrary floating point type.
+  Shell may overshadow this command when invoked in scripts, use `env sleep` to avoid this.
