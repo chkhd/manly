@@ -107,7 +107,7 @@
   ~-S~ specifies kernel version to use when findng modules instead of relying on ~uname(2)~.
   ~--show-depends~ lists module or alias dependencies, including module itself.
   ~-s~ redirects error messages to syslog.
-  
+
 * sleep(1)
   ~sleep NUMBER[SUFFIX]...~
   ~sleep OPTION~
@@ -117,3 +117,22 @@
   Pause for /NUMBER/ of seconds, minutes (/SUFFIX m/), hours (/SUFFIX h/) or days (/SUFFIX d/). If multiple arguments are specified they are summed.
   GNU implementation of sleep accepts arguments of both integer and arbitrary floating point type.
   Shell may overshadow this command when invoked in scripts, use `env sleep` to avoid this.
+
+* tr(1)
+  ~tr [OPTION]... SET1 [SET2]~
+
+  Translate or delete characters
+
+  ~-d~ can be used to delete specific characters in ~SET1~.
+  ~-s~ is used to replace multiple occurrences of specific characters in ~SET1~ with single occurrence.
+  The usual escape sequences can be used inside ~SET1~ and ~SET2~ and they maintain their usual meaning too. ~\NNN~ form can be used as well where ~NNN~ is specific character code in octal.
+  Control characters and few others can also be represented, refer to the man page for actual list.
+  ~-t~ can only be used in the absence of ~-d~ and causes ~SET1~ to be truncated to the length of ~SET2~.
+
+  The usual use case would be say to delete specific characters in a stream/string. For example:
+
+#+begin_src bash
+  cat something | tr -d ' \t\n'
+#+end_src
+
+  would delete all newlines, tabs and spaces.
