@@ -136,3 +136,11 @@
 #+end_src
 
   would delete all newlines, tabs and spaces.
+
+* yes(1)
+  ~yes [STRING]...~
+
+  Output a string repeatedly until killed
+
+  Not every command that has prompts has a built-in option to answer them with a 'yes', that is why ~yes~ command exists, you pipe ~yes~ to any such command and it will provide the 'y' character needed for those prompts.
+  Of course, not all prompts require or accept ~y/n~, that is why you can provide arbitrary string(s) when invoking yes commands and they will be used instead of 'y'.
